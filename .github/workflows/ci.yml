@@ -22,6 +22,7 @@ jobs:
 
   security-check:
     runs-on: ubuntu-latest
+    need: compile
     steps:
     - uses: actions/checkout@v4
     - name: Trivy Installation
